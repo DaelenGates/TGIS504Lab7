@@ -3,11 +3,14 @@ var map = L.map('map').setView([47.251, -122.462], 13);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
-    id: 'mapbox/streets-v11',
+    id: 'mapbox/satellite-streets-v12',
     tileSize: 512,
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoiZGFlbGVuZyIsImEiOiJjbDl5d3h6NzkwOTdoM29xb20xYzJ3NmZsIn0.sMhj9jD84igqnZdX08l33A'
 }).addTo(map);
+
+// mapbox://styles/daeleng/clai0pzys000015s2otsvi46f
+// https://api.mapbox.com/styles/v1/daeleng/clai0pzys000015s2otsvi46f/wmts?access_token=pk.eyJ1IjoiZGFlbGVuZyIsImEiOiJjbDl5d3h6NzkwOTdoM29xb20xYzJ3NmZsIn0.sMhj9jD84igqnZdX08l33A 
 
 // Tells user what this tool is for (coolecting road info) 
 alert('This tool is to record Road issues to they can be fixed \ncreate a marker to record the issue:');
