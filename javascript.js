@@ -21,7 +21,7 @@ var drawnItems = L.featureGroup().addTo(map);
 // This code creates the layer group that takes the data from the SQL table and displays it on the map
 // This also sets the SQL variables 
 var tableData = L.layerGroup().addTo(map);
-var url = "https://178.128.228.240:4000/sql?q=";
+var url = "https://gisdb.xyz/sql?q=";
 // change the Query below by replacing lab_7_name with your table name
 var sqlQuery = "SELECT * FROM roadCon";
 function addPopup(feature, layer) {
